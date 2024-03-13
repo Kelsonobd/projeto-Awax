@@ -75,7 +75,7 @@ header {
 
 /* START MAIN */
 
-.button{
+.button {
     display: inline-block;
     background-color: #B28756;
     color: #FFF;
@@ -204,6 +204,7 @@ header {
 .default.dark .seciont-body {
     color: #ffffff
 }
+
 /* END MAIN */
 
 
@@ -217,7 +218,8 @@ header {
 .section-aboutus--left {
     flex: 1;
 }
-.section-aboutus--left p{
+
+.section-aboutus--left p {
     font-size: 14px;
     line-height: 25px;
 
@@ -233,31 +235,75 @@ header {
     box-shadow: 0px 5px 10px #333;
 
 }
+
 /* END AREA ABOUT US */
 
 /* START AREA SERVICES */
 .section-services {
-    display:flex;
+    display: flex;
 }
+
 .section-service {
-    flex:1;
+    flex: 1;
     text-align: center;
     color: #F7F7F7;
     border-right: 1px solid #333;
     padding: 15px;
 }
+
 .section-service:first-child {
     border-left: 1px solid #333;
 }
+
 .section-services h4 {
-    margin-top:20px;
+    margin-top: 20px;
     text-transform: uppercase;
     font-size: 18px;
 }
-.section-service p{
-    margin-top:10px;
+
+.section-service p {
+    margin-top: 10px;
     font-size: 13px;
-    color:#999;
+    color: #999;
 }
+
 /* END AREA SERVICES */
 
+/* START AREA PROJECTS */
+
+.section-projects {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects--filters {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 30px;
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li {
+    list-style: none;
+}
+
+.section-projects--filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left:1px solid #ccc;
+    color: #555;
+    border-bottom: 3px solid #eee;
+    cursor:pointer;
+}
+.section-projects--filters li:hover,
+.section-projects--filters li.active  {
+    border-bottom: 3px solid #B28756;
+}
+.section-projects--filters li:first-child {
+    border-left: 0px;
+}
